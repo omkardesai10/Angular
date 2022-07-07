@@ -1,0 +1,40 @@
+<!--
+    
+        // ngIf
+
+    <h1 *ngIf = "flag">
+    Inside Marvellous Component
+</h1>
+
+<ng-template #VegFood>
+    <h1>
+        Please consider veg food menu
+    </h1>
+</ng-template>
+
+<ng-template #NonvegFood>
+    <h1>
+        Please consider non veg food menu
+    </h1>
+</ng-template>
+
+<h1 *ngIf = "Food ; then VegFood ; else NonvegFood">
+</h1>
+
+-->
+
+
+
+<!--ngSwitch-->
+
+<h1>
+    Marvellous Infosystems Portal
+</h1>
+
+<div [ngSwitch] = "Batch">
+    <div *ngSwitchCase = "'PPA'"> You are selecting PPA batch</div>
+    <div *ngSwitchCase = "'LB'"> You are selecting LB batch</div>
+    <div *ngSwitchCase = "'Python'"> You are selecting Python batch</div>
+    <div *ngSwitchCase = "'Angular'"> You are selecting Angular batch</div>
+    <div *ngSwitchDefault>There is no such batch</div>
+</div>
